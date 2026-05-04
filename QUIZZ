@@ -1,0 +1,48 @@
+sebuah bengkel kendaraan ingin membuat aplikasi sederhana untuk mencatat data layanan kendarran pelanggan. dalam aplikasi tersebut. 
+setiap kedaraan memiliki data umum seperti nomor polisi, merek, tahun produksi, dan status service. setiap kendaraan juga dapat melakukan aksi seperti tampilkan data dan ubah status servis.
+bengkel tersebut melayani beberapa jenis kendaraan. yaitu mobil dan motor. mobil memiliki data tambahan berupa jumlahpintu dan dan tipe tranmisi, sedangkan motor memiliki data tambahan berupa jenis mesin dan kapasitas tangki.
+status servis harus dilakukan melalui method tertentu agar nilainya tetap valid
+bernilai "menunggu", "diproses", dan"selesai"
+rancanglah  analisis konseptusi OOP untuk kasus bengkel tersebut dengan menjawab poin poin berikut:
+1. Tentukan class apa saja yang dibutuhkan dalam sistem tersebut. lalu jelaskan alasan penilainnya.
+2. identifikassi atribut dan method yang sebaiknya ditempatkan pada class induk dan class turunan
+3. jelaskan bagaimana constructor digunakan agar objek kendaraan selalu memiliki data awal yang valid saat dibuat.
+4. analisi bagaimana encapsulations diterapkan untuk melindungi data kendaraan. khususnya pada atribut status servis.
+5. jelaskan mengapa inheritance tepat digunakan pada kasus ini. serta alasan kendaraan lebih cocok menjadi superclass dibandingkan langsung membuat class mobil dan motor secara terpisah;
+6. berikan contoh minimal satu objek nyataa dan class mobil dan motor. lalu jelaskan nilai atribut yang dimiliki objek tersebut.
+
+
+Jawaban.
+1. dalam aplikasi tersebut memiliki 3 class:
+    class kendaraan digunakan untuk digunakan untuk data umum seperti nomor polisi, merek, tahun produksi, dan status service.
+    class motor digunakan untuk data tambahan yang dibutuhkan.
+    class mobil digunakan untuk data tambahana yang dibutuhkan
+
+2. untuk class induk kendaraan memakai atribut
+    nomor polisi, merek, tahun produksi, dan status service.
+    method:
+    tampilkan data ()
+    ubah status service ()
+ 
+   untuk class turunan mobil memakai atribut:
+    jumlah pintu, tipe tranmisi.
+    method:
+    tampilkan data ()
+   untuk class turunan motor memakai atribut:
+   jenis mesin, kapasitas tangki.
+   method:
+   tampilkan data()
+
+3. kendaraan (nomor polisi, merek, tahun produksi, dan status service)
+   motor     (jenis mesin, kapasitas tangki, nomor polisi, merek, tahun produksi, dan status service)
+   mobil     (pintu, tranmisi, nomor polisi, merek, tahun produksi, dan status service)
+
+4. atribut service kita buat private agar tidak bisa diubah kecuali admin
+    method ubahstatusservice digunakan untuk mengubah jadwal service
+    membuat getterstatus service
+
+5. agar lebih mudah dalam pengawasan dan pemeliharaan 
+
+6. objek moTOR
+    JENIS MESIN:150CC
+    KAPASISTAS TANGKI:4LILTER
