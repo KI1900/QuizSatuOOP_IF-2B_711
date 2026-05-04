@@ -39,7 +39,7 @@ Jawaban.
 
 4. atribut service kita buat private agar tidak bisa diubah kecuali admin
     method ubahstatusservice digunakan untuk mengubah jadwal service
-    membuat getterstatus service
+    membuat getterstatus service digunakan untuk menggambil nilai atribut
 
 5. agar lebih mudah dalam pengawasan dan pemeliharaan 
 
